@@ -6,40 +6,27 @@
  * License: CC Share/Share-alike
  */
  
-#include "TGD_Movement.h"
+#include "TGD_Movement.h" // Set pin assignments in "TGD_Movement.h"
 
 void setup() {
   // put your setup code here, to run once:
   init_movement();
   
-  pinMode(forwardPin, INPUT);
-  delay(1000);
-  pinMode(forwardPin, OUTPUT);
-  delay(500);
-  pinMode(backPin, INPUT);
-  delay(1000);
-  pinMode(backPin, OUTPUT);
-  delay(500);
-  pinMode(leftPin, INPUT);
-  pinMode(forwardPin, INPUT);
-  delay(750);
-  pinMode(forwardPin, OUTPUT);
-  delay(500);
-  pinMode(backPin, INPUT);
-  delay(750);
-  pinMode(backPin, OUTPUT);
-  pinMode(leftPin, OUTPUT);
-  delay(500);
-  pinMode(rightPin, INPUT);
-  pinMode(forwardPin, INPUT);
-  delay(750);
-  pinMode(forwardPin, OUTPUT);
-  delay(500);
-  pinMode(backPin, INPUT);
-  delay(750);
-  pinMode(backPin, OUTPUT);
-  pinMode(rightPin, OUTPUT);
-  
+  move_forward_stop(1000);     // Move forward for one second and stop.
+  delay(500);                  // Pause for half a second.
+  move_reverse_stop(1000);     // Move backwards for one second and stop.
+  delay(500);                  // Pause for half a second.
+  wheels_left();               // Turn wheels left.
+  move_forward_stop(750);      // Move forward while turning left for 0.75 seconds.
+  delay(500);                  // Pause for half a second.
+  move_reverse_stop(750);      // Move backwards with wheels turned left for 0.75 seconds.
+  delay(500);                  // Pause for half a second.
+  wheels_right();              // Turn wheels right.
+  move_forward_stop(750);      // Move forward while turning right for 0.75 seconds.
+  delay(500);                  // Pause for half a second.
+  move_reverse_stop(750);      // Move backwards with wheels turned right for 0.75 seconds.
+  wheels_center();             // Turn wheels to point straight forward.
+   
 
 }
 
