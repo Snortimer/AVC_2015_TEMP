@@ -32,5 +32,13 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  
+  // check current and destination location.
+  // calculate heading to get from a to b.
+  // compare it to current heading.
+  // check for obstacles.
+  // turn vehicle to correct heading.
+  // check for obstacles.
+  // move forward for 1 second and stop.
 
 }
