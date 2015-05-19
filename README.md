@@ -1,13 +1,13 @@
 # AVC_2015_TEMP
-Temporary repository for AVC code until TGD's repository is set up.
+<p>Temporary repository for AVC code until TGD's repository is set up.</p>
 
-This is the codebase for The Gizmo Dojo's 2015 Sparkfun AVC entry. Documentation will be sketchy,
-but the basics should be here.
+<p>This is the codebase for The Gizmo Dojo's 2015 Sparkfun AVC entry. Documentation will be sketchy,
+but the basics should be here.</p>
 
-I've written the beginnings of a library for our very specific hardware setup. This is designed to prevent
-damage to the control board.
+<p>I've written the beginnings of a library for our very specific hardware setup. This is designed to prevent
+damage to the control board.</p>
 
-The following commands can be used to move the car:
+<p>The following commands can be used to move the car:</p>
 <code>
 init_movement();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Please call this at the beginning of setup().<br />
 move_forward(time_in_ms);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This moves forward &lt;time_in_ms&gt; and coasts.<br />
