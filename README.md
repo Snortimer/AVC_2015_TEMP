@@ -8,14 +8,15 @@ I've written the beginnings of a library for our very specific hardware setup. T
 damage to the control board.
 
 The following commands can be used to move the car:
-
-init_movement();&nbsp;&nbsp;&nbsp;&nbsp; // Please call this at the beginning of setup(). It prevents floating voltages.
-move_forward(time_in_ms);&nbsp;&nbsp;&nbsp;&nbsp;         // This moves forward <time_in_ms> and coasts.
-move_forward_stop(time_in_ms);&nbsp;&nbsp;&nbsp;&nbsp;    // This moves forward <time_in_ms> and stops.
-move_reverse(time_in_ms);&nbsp;&nbsp;&nbsp;&nbsp;         // This moves backwards <time_in_ms> and coasts.
-move_reverse_stop(time_in_ms);&nbsp;&nbsp;&nbsp;&nbsp;    // This moves backwards <tim_in_ms> and stops.
-wheels_left();&nbsp;&nbsp;&nbsp;&nbsp;                    // This turns the wheels to the left position.
-wheels_right();&nbsp;&nbsp;&nbsp;&nbsp;                   // This turns the wheels to the right position.
-wheels_center();&nbsp;&nbsp;&nbsp;&nbsp;                  // This turns the wheels to the center (or straight) position.
-
+<code>
+init_movement();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Please call this at the beginning of setup().<br />
+move_forward(time_in_ms);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This moves forward &lt;time_in_ms&gt; and coasts.<br />
+move_forward_stop(time_in_ms);&nbsp;&nbsp;// This moves forward &lt;time_in_ms&gt; and stops.<br />
+move_reverse(time_in_ms);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This moves backwards &lt;time_in_ms&gt; and coasts.<br />
+move_reverse_stop(time_in_ms);&nbsp;&nbsp;// This moves backwards &lt;time_in_ms&gt; and stops.<br />
+wheels_left();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This turns the wheels to the left position.<br />
+wheels_right();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This turns the wheels to the right position.<br />
+wheels_center();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// This turns the wheels to the center (or straight) position.<br />
+</code>
+<br />&nbsp;<br />
 More commands may be added if they are deemed useful.
